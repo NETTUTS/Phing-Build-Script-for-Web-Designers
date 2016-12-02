@@ -76,7 +76,7 @@
 			<fileset dir="${build.dir}" includes="**/*.html, **/*.php" />	
 			 <filterchain>
 			    <replaceregexp>
-			      <regexp pattern="&lt;!--\s*js\s*-->[\s\S]+?&lt;!--\s*end js\s*-->" replace="&lt;script src='./${base.js.path}/${js.concat.min}/${js.concat.min}'>&lt;/script>" />
+			      <regexp pattern="&lt;!--\s*js\s*-->[\s\S]+?&lt;!--\s*end js\s*-->" replace="&lt;script src='./${base.js.path}/${js.concat.min}'>&lt;/script>" />
 
 			    <regexp pattern="&lt;!--\s*css\s*-->[\s\S]+?&lt;!--\s*end css\s*-->" replace="&lt;link rel='stylesheet' href='./${base.css.path}/${css.concat.min}' />" />
 			    </replaceregexp>
